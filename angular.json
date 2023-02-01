@@ -105,6 +105,68 @@
           }
         }
       }
+    },
+    "input": {
+      "projectType": "library",
+      "root": "projects/input",
+      "sourceRoot": "projects/input/src",
+      "prefix": "calix",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/input/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/input/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/input/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/input/src/test.ts",
+            "tsConfig": "projects/input/tsconfig.spec.json",
+            "karmaConfig": "projects/input/karma.conf.js"
+          }
+        }
+      }
+    },
+    "calix-ui": {
+      "projectType": "library",
+      "root": "projects/calix-ui",
+      "sourceRoot": "projects/calix-ui/src",
+      "prefix": "calix",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/calix-ui/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/calix-ui/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/calix-ui/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/calix-ui/src/test.ts",
+            "tsConfig": "projects/calix-ui/tsconfig.spec.json",
+            "karmaConfig": "projects/calix-ui/karma.conf.js"
+          }
+        }
+      }
     }
   }
 }

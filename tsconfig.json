@@ -8,6 +8,14 @@
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
+    "paths": {
+      "calix-ui": [
+        "dist/calix-ui"
+      ],
+      "input": [
+        "dist/calix-ui/input"
+      ]
+    },
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,

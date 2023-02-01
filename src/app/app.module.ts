@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { CalixInputModule, CalixUiModule  } from 'calix-ui';
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CalixUiModule,
+    CalixInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
