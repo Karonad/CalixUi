@@ -1,24 +1,33 @@
 # CalixUi
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+This project intends to create an angular components library.
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name --project calix-ui` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project calix-ui`.
-> Note: Don't forget to add `--project calix-ui` or else it will be added to the default project in your `angular.json` file. 
+npm install calix-ui
 
-## Build
+## Adding Calix to your projects
 
-Run `ng build calix-ui` to build the project. The build artifacts will be stored in the `dist/` directory.
+Add Calix[COMPONENT_NAME]Module to your module imports then use it as a describe in your html.
 
-## Publishing
+## Components
 
-After building your library with `ng build calix-ui`, go to the dist folder `cd dist/calix-ui` and run `npm publish`.
+**CalixInputComponent**
 
-## Running unit tests
+Html tag: `<calix-input></calix-input>`
 
-Run `ng test calix-ui` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Parameters:
 
-## Further help
+- labelTitle (string): Input to define expected label title.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- labelMandatory (boolean): Input to display if it is required or not.
+
+- placeholder (string): Input to define expected placeholder text.
+
+- value (string): Input to define and bind expected value.
+
+- hint (string): Input to define expected hint text.
+
+- errorMessage (string): Input to define expected error message text.
+
+- hasError (boolean): Input to display an error.
