@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CalixInputModule } from 'dist/calix-ui';
+import { CalixInputModule } from 'calix-ui';
 import { AppComponent } from './app.component';
 
 @NgModule({
