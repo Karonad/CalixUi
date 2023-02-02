@@ -9,12 +9,8 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "paths": {
-      "calix-ui": [
-        "dist/calix-ui"
-      ],
-      "input": [
-        "dist/calix-ui/input"
-      ]
+      "calix-ui": ["dist/calixui"],
+      "input": ["dist/calixui/input"]
     },
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
@@ -26,10 +22,7 @@
     "importHelpers": true,
     "target": "es2020",
     "module": "es2020",
-    "lib": [
-      "es2020",
-      "dom"
-    ]
+    "lib": ["es2020", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
