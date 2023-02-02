@@ -16,11 +16,11 @@ Add Calix[COMPONENT_NAME]Module to your module imports then use it as a describe
 
 Html tag: `<calix-input></calix-input>`
 
-Parameters:
+**Parameters**
 
 - labelTitle (string): Input to define expected label title.
 
-- labelMandatory (boolean): Input to display if it is required or not.
+- inputMandatory (boolean): Input to display if it is required or not.
 
 - placeholder (string): Input to define expected placeholder text.
 
@@ -31,3 +31,28 @@ Parameters:
 - errorMessage (string): Input to define expected error message text.
 
 - hasError (boolean): Input to display an error.
+
+**Example**
+`<calix-input>`
+&nbsp;&nbsp;`[labelTitle]="'A Label'"`
+&nbsp;&nbsp;`[inputMandatory]="true"`
+&nbsp;&nbsp;`[placeholder]="'A placeholder'"`
+&nbsp;&nbsp;`[hint]="'A hint !'"`
+&nbsp;&nbsp;`[value]="my_value"`
+`</calix-input>`
+
+## Version
+
+Build in node.js 16.17.1 and npm 8.15.0
+
+## Dependencies
+
+Peer Dependencies:
+
+- @angular/common ^14.0.0
+
+- @angular/core ^14.0.0
+
+Dependencies:
+
+- tslib ^2.3.0
