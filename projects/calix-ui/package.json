@@ -1,6 +1,6 @@
 {
   "name": "calixui",
-  "version": "0.5.1",
+  "version": "1.0.0-rc",
   "peerDependencies": {
     "@angular/common": "^14.0.0",
     "@angular/core": "^14.0.0"
