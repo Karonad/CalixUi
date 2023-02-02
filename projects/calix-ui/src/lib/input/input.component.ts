@@ -12,10 +12,10 @@ export class InputComponent {
   @Input() value = '';
   @Input() hint = 'This is a hint text to help user';
   @Input() errorMessage = 'Error message';
+  @Input() hasError = false;
 
   @Output() valueChange = new EventEmitter<string>();
 
-  hasError = true;
 
   constructor() {}
 

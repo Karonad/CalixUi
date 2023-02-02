@@ -8,7 +8,7 @@
     />
     <span class="material-symbols-outlined info"> info </span>
   </div>
-  <input id="input" type="text" [(ngModel)]="value" placeholder="{{ placeholder }}" (ngModelChange)="changeValue()"/>
+  <input id="input" type="text" [(ngModel)]="value" placeholder="{{ placeholder }}" (ngModelChange)="changeValue()" [required]="labelMandatory"/>
   <small>{{ hint }}</small>
   <div class="error" *ngIf="hasError">
     <span class="errorIcon material-symbols-outlined"> error </span>
