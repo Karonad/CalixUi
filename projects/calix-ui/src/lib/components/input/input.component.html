@@ -11,10 +11,10 @@
   <input
     id="input"
     type="text"
-    [(ngModel)]="value"
     placeholder="{{ placeholder }}"
-    (ngModelChange)="changeValue()"
     [required]="inputMandatory"
+    [(ngModel)]="value"
+    (ngModelChange)="changeValue()"
   />
   <small>{{ hint }}</small>
   <div class="error" *ngIf="hasError">

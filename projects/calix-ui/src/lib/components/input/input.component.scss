@@ -1,5 +1,9 @@
-p {
-  margin: 0;
+input {
+  width: fill;
+  height: max-content;
+  padding: 0.5%;
+  border: solid 1px lightgray;
+  border-radius: 3px;
 }
 
 label {
@@ -8,12 +12,8 @@ label {
   text-overflow: ellipsis;
 }
 
-input {
-  width: fill;
-  height: max-content;
-  padding: 0.5%;
-  border: solid 1px lightgray;
-  border-radius: 3px;
+p {
+  margin: 0;
 }
 
 small {
@@ -24,15 +24,6 @@ small {
 
 .container {
   padding: 1%;
-}
-
-.label {
-  width: fill;
-  height: fit-content;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  padding: 8px 0;
 }
 
 .error {
@@ -46,13 +37,22 @@ small {
   padding-left: 4px;
 }
 
+.errorIcon.material-symbols-outlined {
+  color: red;
+  font-size: 18px;
+  font-variation-settings: "FILL" 1;
+}
+
 .info.material-symbols-outlined {
   color: green;
   font-size: 18px;
 }
 
-.errorIcon.material-symbols-outlined {
-  color: red;
-  font-size: 18px;
-  font-variation-settings: "FILL" 1;
+.label {
+  width: fill;
+  height: fit-content;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0;
 }
