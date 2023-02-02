@@ -8,7 +8,7 @@ export class AppComponent {
   title = 'CalixUi';
   value = '';
 
-  toto(event: any) {
+  test(event: any) {
     console.log(event);
   }
 }

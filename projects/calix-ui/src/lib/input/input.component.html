@@ -5,7 +5,7 @@
 <div class="container">
   <div class="label">
     <label for="calix-input">{{ labelTitle }}</label>
-    <p *ngIf="labelMandatory">&nbsp;*&nbsp;</p>
+    <p *ngIf="inputMandatory">&nbsp;*&nbsp;</p>
     <span class="material-symbols-outlined info"> info </span>
   </div>
   <input
@@ -14,7 +14,7 @@
     [(ngModel)]="value"
     placeholder="{{ placeholder }}"
     (ngModelChange)="changeValue()"
-    [required]="labelMandatory"
+    [required]="inputMandatory"
   />
   <small>{{ hint }}</small>
   <div class="error" *ngIf="hasError">

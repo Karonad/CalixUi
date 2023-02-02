@@ -32,6 +32,26 @@ describe('InputComponent', () => {
     expect(component.valueChange.emit).toHaveBeenCalledWith('calix-test');
   });
 
+  it('should emit value and trigger error', () => {
+    jest.spyOn(component.valueChange, 'emit');
+    component.inputMandatory = true;
+    const input = fixture.debugElement.query(By.css('input')).nativeElement;
+    input.value = '';
+    input.dispatchEvent(new Event('input'));
+    fixture.detectChanges();
+    expect(component.valueChange.emit).toHaveBeenCalledWith(null);
+  });
+
+  it('should emit value and trigger error', () => {
+    jest.spyOn(component.valueChange, 'emit');
+    component.inputMandatory = false;
+    const input = fixture.debugElement.query(By.css('input')).nativeElement;
+    input.value = '';
+    input.dispatchEvent(new Event('input'));
+    fixture.detectChanges();
+    expect(component.valueChange.emit).toHaveBeenCalledWith('calix-');
+  });
+
   it('should not render hasError', () => {
     component.hasError = false;
     fixture.detectChanges();
@@ -51,14 +71,14 @@ describe('InputComponent', () => {
   });
 
   it('should not render mandatory', () => {
-    component.labelMandatory = false;
+    component.inputMandatory = false;
     fixture.detectChanges();
     const p = fixture.debugElement.query(By.css('p'));
     expect(p).toBeNull();
   });
 
   it('should render mandatory', () => {
-    component.labelMandatory = true;
+    component.inputMandatory = true;
     fixture.detectChanges();
     const p = fixture.debugElement.query(By.css('p'));
     expect(p).toBeTruthy();
