@@ -6,7 +6,7 @@ This project intends to create an angular components library.
 
 npm install calix-ui
 
-## Adding to your projects
+## Adding Calix to your projects
 
 Add Calix[COMPONENT_NAME]Module to your module imports then use it as a describe in your html.
 
