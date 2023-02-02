@@ -1,27 +1,35 @@
 # CalixUi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+This project intends to create an angular components library.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+npm install calix-ui
 
-## Code scaffolding
+## Adding to your projects
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Add Calix[COMPONENT_NAME]Module to your module imports then use it as a describe in your html.
 
-## Build
+## Components
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**CalixInputComponent**
 
-## Running unit tests
+Html tag: `<calix-input></calix-input>`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Parameters:
+ 
+ - labelTitle (string): Input to define expected label title.
+ 
+ - labelMandatory (boolean): Input to display if it is required or not.
+ 
+ - placeholder (string): Input to define expected placeholder text.
+ 
+ - value (string): Input to define and bind expected value.
 
-## Running end-to-end tests
+ - hint (string): Input to define expected hint text.
+ 
+ - errorMessage (string): Input to define expected error message text.
+ 
+ - hasError (boolean): Input to display an error.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
