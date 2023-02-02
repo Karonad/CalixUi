@@ -33,12 +33,19 @@ Html tag: `<calix-input></calix-input>`
 - hasError (boolean): Input to display an error.
 
 **Example**
+
 `<calix-input>`
+
 &nbsp;&nbsp;`[labelTitle]="'A Label'"`
+
 &nbsp;&nbsp;`[inputMandatory]="true"`
+
 &nbsp;&nbsp;`[placeholder]="'A placeholder'"`
+
 &nbsp;&nbsp;`[hint]="'A hint !'"`
+
 &nbsp;&nbsp;`[value]="my_value"`
+
 `</calix-input>`
 
 ## Version
