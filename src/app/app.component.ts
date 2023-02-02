@@ -2,14 +2,13 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'CalixUi';
-  value = "default"
+  value = '';
 
-toto(event: any) {
-  console.log(event);
-
-}
+  toto(event: any) {
+    console.log(event);
+  }
 }
